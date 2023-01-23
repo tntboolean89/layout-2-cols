@@ -27,6 +27,26 @@ Debug
     background-color: #ADD8E6;
 }
 
+
+
+.debug .col {
+    flex-grow: 0;
+}
+
+
+
+.debug .col-big {
+    background-color: #800080;
+    min-height: 450px;
+    
+}
+
+.debug .col-small {
+    background-color: #EF82EE;
+    min-height: 250px;
+}
+
+
 /*
 -----------
 Common
@@ -44,6 +64,10 @@ Header
 */
 
 
+header {
+    margin-bottom: 20px;
+ 
+}
 
 
 
@@ -58,6 +82,22 @@ Main
 
 .row {
     display: flex;
+    align-items: flex-start;
+    
+    margin: 0 -10px;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 0 10px;
+}
+
+.col-big {
+    width: calc(60% - 20px);
+}
+
+.col-small {
+    width: calc(40% - 20px);
 }
 
 
@@ -67,4 +107,6 @@ Footer
 -----------
 */
 
-
+footer {
+    margin-top: 20px;
+}
